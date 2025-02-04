@@ -1,5 +1,7 @@
 package lang.object.test;
 
+import java.util.Objects;
+
 public class Rectangle {
     private int width;
     private int height;
@@ -18,9 +20,15 @@ public class Rectangle {
     }
 
     @Override
-    public boolean equals(Object obj1, Object obj2) {
-        Rectangle rectangle1 = (Rectangle) obj1;
-        Rectangle rectangle2 = (Rectangle) obj2;
-        return obj1.equals(obj2);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Rectangle rectangle = (Rectangle) o;
+        return width == rectangle.width && height == rectangle.height;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(width, height);
     }
 }
