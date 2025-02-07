@@ -22,8 +22,8 @@ public class MyInteger {
         }
     }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value); //숫자를 문자로 반환
-    }
+//    @Override
+//    public String toString() {
+//        return String.valueOf(value); //숫자를 문자로 반환
+//    }
 }
