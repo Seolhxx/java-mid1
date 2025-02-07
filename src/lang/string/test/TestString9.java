@@ -5,11 +5,11 @@ public class TestString9 {
     public static void main(String[] args) {
         String email = "hello@example.com";
 
-        String[] splitEmails = email.split("@");
-        String splitEmail1 = splitEmails[0];
-        String splitEmail2 = splitEmails[1];
+        String[] parts = email.split("@");
+        String idPart = parts[0];
+        String domainPart = parts[1];
 
-        System.out.println("ID: " + splitEmail1);
-        System.out.println("Domain: " + splitEmail2 );
+        System.out.println("ID: " + idPart);
+        System.out.println("Domain: " + domainPart);
     }
 }

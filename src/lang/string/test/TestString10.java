@@ -5,12 +5,12 @@ public class TestString10 {
     public static void main(String[] args) {
         String fruits = "apple,banaba,mango";
 
-        String[] splits = fruits.split(",");
-        for (String split : splits) {
-            System.out.println(split);
+        String[] splitFruits = fruits.split(",");
+        for (String fruit : splitFruits) {
+            System.out.println(fruit);
         }
 
-        String result = String.join("->", splits);
-        System.out.println(result);
+        String joinedString = String.join("->", splitFruits);
+        System.out.println(joinedString);
     }
 }

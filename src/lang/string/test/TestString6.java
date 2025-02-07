@@ -5,16 +5,14 @@ public class TestString6 {
         String str = "start hello java, hello spring, hello jpa";
         String key = "hello";
 
-
         int count = 0;
-        while(true) {
-            if (str.equals(key)) {
-                int result = str.indexOf(key);
-                count += result;
-            }
-            System.out.println("count = " + count);
-            break;
+        int index = str.indexOf(key);
+        while(index >= 0) {
+            index = str.indexOf(key, index + 1);
+            System.out.println("index = " + index);
+            count++;
         }
+        System.out.println("count = " + count);
 
     }
 }
