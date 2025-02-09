@@ -6,9 +6,9 @@ public class StringGradeEx1_1 {
         int price = 10000;
 
         DiscountService discountService = new DiscountService();
-        int basic = discountService.disciunt(StringGrade.BASIC, price);
-        int gold = discountService.disciunt(StringGrade.GOLD, price);
-        int diamond = discountService.disciunt(StringGrade.DIAMOND, price);
+        int basic = discountService.discount(StringGrade.BASIC, price);
+        int gold = discountService.discount(StringGrade.GOLD, price);
+        int diamond = discountService.discount(StringGrade.DIAMOND, price);
 
         System.out.println("BASIC 등급의 할인 금액: " + basic);
         System.out.println("GOLD 등급의 할인 금액: " + gold);

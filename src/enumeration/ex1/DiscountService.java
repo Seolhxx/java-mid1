@@ -2,7 +2,7 @@ package enumeration.ex1;
 
 public class DiscountService {
 
-    public int disciunt(String grade, int price) {
+    public int discount(String grade, int price) {
         int discountPercent = 0;
 
         if (grade.equals(StringGrade.BASIC)) {
