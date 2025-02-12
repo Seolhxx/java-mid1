@@ -17,6 +17,5 @@ public class ZoneIdMain {
 
         ZoneId seoulZoneId = ZoneId.of("Asia/Seoul");
         System.out.println("seoulZoneId = " + seoulZoneId);
-
     }
 }

@@ -19,7 +19,5 @@ public class ZonedDateTimeMain {
 
         ZonedDateTime utcZdt = zdt2.withZoneSameInstant(ZoneId.of("UTC"));
         System.out.println("utcZdt = " + utcZdt);
-
-
     }
 }
