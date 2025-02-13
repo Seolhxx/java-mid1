@@ -5,6 +5,7 @@ import java.time.ZoneId;
 public class ZoneIdMain {
 
     public static void main(String[] args) {
+
         for (String availableZoneId : ZoneId.getAvailableZoneIds()) {
             System.out.println("availableZoneId = " + availableZoneId);
             //객체로 얻기
