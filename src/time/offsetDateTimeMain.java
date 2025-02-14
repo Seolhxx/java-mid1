@@ -8,7 +8,6 @@ import java.time.ZoneOffset;
 public class offsetDateTimeMain {
 
     public static void main(String[] args) {
-
         OffsetDateTime nowOdt = OffsetDateTime.now();
         System.out.println("nowOdt = " + nowOdt);
 
