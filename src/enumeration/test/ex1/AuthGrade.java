@@ -12,7 +12,11 @@ public enum AuthGrade {
     }
 
 
-    public void getGrade (int level, String desciption) {
-        System.out.println("레벨= " + level + "설명= " + desciption);
+    public int getLevel() {
+        return level;
+    }
+
+    public String getDesciption() {
+        return description;
     }
 }
