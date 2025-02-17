@@ -4,12 +4,14 @@ public class WrapperTest4 {
     public static void main(String[] args) {
         String str = "100";
 
-        Integer num1 = Integer.valueOf(str);
-        int unboxing = num1;
-        Integer boxing = unboxing;
+        Integer integer1 = Integer.parseInt(str);
+        System.out.println("integer1 = " + integer1);
 
-        System.out.println("num1 = " + num1);
-        System.out.println("boxing = " + boxing);
-        System.out.println("unboxing = " + unboxing);
+        int intValue = integer1;
+        System.out.println("intValue = " + intValue);
+
+        Integer integer2 = intValue;
+        System.out.println("integer2 = " + integer2);
+
     }
 }

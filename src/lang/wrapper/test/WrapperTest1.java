@@ -6,9 +6,9 @@ public class WrapperTest1 {
         String str1 = "10";
         String str2 = "30";
 
-        int str3 = Integer.parseInt(str1);
-        int str4 = Integer.parseInt(str2);
-
-        System.out.println("sum= " + (str3 + str4));
+        int num1 = Integer.parseInt(str1);
+        int num2 = Integer.parseInt(str2);
+        int sum = num1 + num2;
+        System.out.println("두 수의 합: " + sum);
     }
 }
