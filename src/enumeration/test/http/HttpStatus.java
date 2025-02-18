@@ -6,8 +6,27 @@ public enum HttpStatus {
     NOT_FOUND(404, "Not Found"),
     INTERNAL_SERVER_ERROR(500, "Internal Server Error");
 
-    private int code;
-    private String message;
+    private final int code;
+    private final String message;
+
+    HttpStatus(int code, String message) {
+        this.code = code;
+        this.message = message;
+    }
+
+    public static HttpStatus findByCode (int code) {
+        HttpStatus[] values = values();
+        for (HttpStatus status : values) {
+            if (status.getCode() == code) {
+                return status;
+            }
+        }
+        return null;
+    }
+
+    public boolean isSuccess () {
+        return code >= 200 && code <= 299;
+    }
 
     public int getCode() {
         return code;
@@ -17,11 +36,4 @@ public enum HttpStatus {
         return message;
     }
 
-    public static HttpStatus findByCode (int number) {
-       return;
-    }
-
-    public boolean isSuccess () {
-
-    }
 }
