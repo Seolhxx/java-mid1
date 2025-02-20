@@ -1,4 +1,4 @@
-package nested.nested.inner.ex2;
+package nested.inner.ex2;
 
 public class Car {
     private String model;

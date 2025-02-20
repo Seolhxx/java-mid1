@@ -1,4 +1,4 @@
-package nested.nested.local;
+package nested.local;
 
 public class LocalOuterV2 {
 

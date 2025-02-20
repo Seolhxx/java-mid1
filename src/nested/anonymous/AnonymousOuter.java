@@ -1,6 +1,6 @@
-package nested.nested.anonymous;
+package nested.anonymous;
 
-import nested.nested.local.Printer;
+import nested.local.Printer;
 
 public class AnonymousOuter {
 
