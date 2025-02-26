@@ -8,7 +8,8 @@ public class MainV2 {
         //NetworkServiceV2_1 networkService = new NetworkServiceV2_1();
         //NetworkServiceV2_2 networkService = new NetworkServiceV2_2();
         //NetworkServiceV2_3 networkService = new NetworkServiceV2_3();
-        NetworkServiceV2_4 networkService = new NetworkServiceV2_4();
+        //NetworkServiceV2_4 networkService = new NetworkServiceV2_4();
+        NetworkServiceV2_5 networkService = new NetworkServiceV2_5();
 
         Scanner scanner = new Scanner(System.in);
         while (true) {
