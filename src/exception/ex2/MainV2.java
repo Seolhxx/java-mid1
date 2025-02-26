@@ -7,7 +7,8 @@ public class MainV2 {
     public static void main(String[] args) throws NetworkClientExceptionV2 {
         //NetworkServiceV2_1 networkService = new NetworkServiceV2_1();
         //NetworkServiceV2_2 networkService = new NetworkServiceV2_2();
-        NetworkServiceV2_3 networkService = new NetworkServiceV2_3();
+        //NetworkServiceV2_3 networkService = new NetworkServiceV2_3();
+        NetworkServiceV2_4 networkService = new NetworkServiceV2_4();
 
         Scanner scanner = new Scanner(System.in);
         while (true) {
@@ -16,7 +17,7 @@ public class MainV2 {
             if (input.equals("exit")) {
                 break;
             }
-            networkService.sendMessage(input);
+            networkService.sendMessage(input); //throw new RuntimeException("ex");
             System.out.println();
         }
         System.out.println("프로그램을 정상 종료합니다.");
